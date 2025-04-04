@@ -12,7 +12,7 @@ edad = 333;
 console.log("Edad: ", edad);
 
 // Va a fallar! 
-// PI = 1 
+// PI = 1
 
 console.log("PI: ", PI);
 
@@ -28,25 +28,45 @@ if (vacio == indefinido) {
     console.log("Son iguales");
 }
 
+numero = 10
 if (numero > 40) {
     console.log(numero, " es mayor a 40");
 }
 
-if (esActivo) {
+if (!esActivo) {
     console.log("Activo");
 }
 
+let raro = texto + numero
+console.log("> RARO", raro)
+
 // Arrays
 console.log("3 - Arrays");
+let variable;
 let frutas = ["manzana", "banana", "uva"];
-console.log(frutas[1])
+console.log(frutas)
+console.log(frutas.length, frutas[frutas.length - 1])
 
 // Objetos
 console.log("4 - Objetos");
 let persona = {
-    nombre: "Lucía",
+    nombre: "santos",
     edad: 32,
-    activa: true
+    musico: true,
+    mascota: {
+        nombre: "Firulais",
+        edad: 5
+    }
 };
 
-console.log(persona.edad)
+persona.musico = false
+
+console.log("Nombre: ", persona.nombre)
+if (persona.musico) {
+    console.log("Es musico")
+}
+
+
+frutas.push(persona)
+
+console.log("Mascota de ", persona.nombre, " es ", persona.mascota.dni)
