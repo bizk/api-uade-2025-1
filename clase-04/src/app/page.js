@@ -1,7 +1,39 @@
+'use client';
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Button, Typography } from "@mui/material";
+import { useState } from "react";
+
+
+function Botoncito() {
+  return (
+    <button className={styles.button}>
+      <Image
+        className={styles.logo}
+        src="/vercel.svg"
+        alt="Vercel logomark"
+        width={20}
+        height={20}
+      />
+      Botoncito
+    </button>
+  )
+}
+
 
 export default function Home() {
+  const [saludo, setSaludo] = useState("hola");
+  let nombre = "pepe"
+
+  const saludar = () => {
+    console.log(nombre)
+    nombre = "juan"
+    console.log(nombre)
+
+    setSaludo("adios!");
+  }
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -13,20 +45,21 @@ export default function Home() {
           height={38}
           priority
         />
+
         <ol>
           <li>
-            HOLA SOY FRONTEND <code>src/app/page.js</code>.
+            <Typography variant="h1" component="h1">
+              {saludo}
+            </Typography>
           </li>
-          <li>Save and see your changes instantly.</li>
         </ol>
+
+        <Button variant="contained" onClick={() => { saludar() }}>Saludar</Button>
+
 
         <p>
           como estas?
         </p>
-
-        <button>
-          Boton
-        </button>
 
         <div className={styles.ctas}>
           <a
