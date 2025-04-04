@@ -4,6 +4,6 @@ const span = document.getElementById("contador");
 const boton = document.getElementById("sumar");
 
 boton.addEventListener("click", () => {
-    contador++;
+    contador += 2;
     span.innerText = contador;
 });
