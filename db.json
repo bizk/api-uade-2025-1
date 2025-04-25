@@ -1,41 +1,89 @@
 {
-    "posts": [
-        {
-            "id": "1",
-            "title": "a title",
-            "views": 100
-        },
-        {
-            "id": "2",
-            "title": "another title",
-            "views": 200
-        }
-    ],
-    "comments": [
-        {
-            "id": "1",
-            "text": "a comment about post 1",
-            "postId": "1"
-        },
-        {
-            "id": "2",
-            "text": "another comment about post 1",
-            "postId": "1"
-        }
-    ],
-    "profile": {
-        "name": "typicode"
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
     },
-    "prueba": [
-        {
-            "name": "Juan",
-            "email": "juan@gmail.com",
-            "age": 20
-        },
-        {
-            "name": "Pedro",
-            "email": "pedro@gmail.com",
-            "age": 25
-        }
-    ]
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "prueba": [
+    {
+      "name": "Juan",
+      "email": "juan@gmail.com",
+      "age": 20,
+      "id": "72e8"
+    },
+    {
+      "name": "Pedro",
+      "email": "pedro@gmail.com",
+      "age": 25,
+      "id": "90e4"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "user123",
+      "role": "user"
+    }
+  ],
+  "productos": [
+    {
+      "id": "1",
+      "titulo": "Producto A",
+      "precio": 100,
+      "stock": 10
+    },
+    {
+      "id": "ce18",
+      "titulo": "producto1",
+      "precio": 123,
+      "stock": 0
+    },
+    {
+      "id": "51d7",
+      "titulo": "asdas",
+      "precio": 10,
+      "stock": 1
+    },
+    {
+      "id": "138d",
+      "titulo": "asfdsaf",
+      "precio": 1,
+      "stock": 0
+    },
+    {
+      "id": "0c6a",
+      "titulo": "2134567",
+      "precio": 2,
+      "stock": 0
+    }
+  ]
 }
